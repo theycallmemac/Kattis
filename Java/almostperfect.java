@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class kattis {
+class Kattis {
 
     public static void main(String[] args) throws Exception{
     
