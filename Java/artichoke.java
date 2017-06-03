@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Kattis {
+    
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int p = in.nextInt();
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        int d = in.nextInt();
+        int n = in.nextInt();
+        double max = Double.MIN_VALUE;
+        double result = Double.MIN_VALUE;
+
+        for(int i = 1; i <= n; i++) {
+            double value = getValue(p, a, b, c, d, i);
+
+            if(value > max) {
+                max = value;
+            }
+            else if(value < max && i > 1) {
+                double difference = max - value;
+                if(difference > result)
+                    result = difference;
+            }
+        }
+        if(result == Double.MIN_VALUE)
+            System.out.println(0.00);
+        else
+            System.out.println(result);
+    }
+    private static double getValue(int p, int a, int b, int c, int d, int k) {
+        return p * (Math.sin(a * k + b) + Math.cos(c * k + d) + 2);
+    }
+}
