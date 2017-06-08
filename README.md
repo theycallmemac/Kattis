@@ -1,2 +1,4 @@
 # OpenKattis
-My solutions to problems found on https://open.kattis.com/ Written in Python and Java.
+My solutions to problems found on https://open.kattis.com/
+
+Solutions are written in either Python, Java, or C.
