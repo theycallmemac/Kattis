@@ -9,8 +9,6 @@ public class Kattis {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        Scanner scanner = new Scanner(System.in);
-        
         int n = in.nextInt();
         
         List<String> arrayList = new ArrayList<>();
