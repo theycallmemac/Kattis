@@ -2,7 +2,7 @@
 
 int main() {
 
-    int rings,a,b,gcd,array[105];
+    int rings,a,b,gcd,array[10];
     scanf("%d", &rings);
     for (int i = 0; i < rings; i++) {
         scanf("%d", &array[i]);
